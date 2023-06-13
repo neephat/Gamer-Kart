@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="CodeHim">
+    <title>Gamer Kart</title>
+
+    <!-- My Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+  
+    <!-- Boostrap CSS -->
+    <!-- I am comfortable with this version of Bootstrap. For that I have used this version over the new version of Bootstrap. -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  
+  </head>
+  <body> 
+    <!-- Navbar Codes Start Here -->  
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="#">GamerKart</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li> 
+        </ul>
+     
+      </div>
+    </nav>
+    <!-- Navbar Codes End Here -->  
+
+ <main>
+     <!-- Container Codes Start Here -->
+     <div class="container">
+      <div class="row">
+        
+        <!-- Cart Codes Start Here -->
+        <div class="col-sm-12 col-md-12 col-lg-6 col-xs-12">
+          <h4 class="badge-pill badge-light mt-3 mb-3 p-2 text-center">Cart</h4>
+          <div class="cart"></div>
+        </div>
+        <!-- Cart Codes End Here -->
+
+
+        <div class="col-sm-12 col-md-12 col-lg-6 col-xs-12">
+          <h4 class="badge-pill badge-light mt-3 mb-3 p-2 text-center">Products</h4>
+
+          <!-- Items Codes Start Here -->
+          <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-6 col-xs-6">
+              <div class="shadow-sm card mb-3 product text-center">
+                <img class="product-img mt-2" src="./img/console.jpg" alt="prd1" onmouseover="animateImg(this)"
+                onmouseout="normalImg(this)"/>
+                <div class="card-body">
+                  <h5 class="card-title text-info bold product-name">Gaming Console</h5>
+                  <p class="card-text text-success product-price">300 Tk.</p>
+                  <button class="btn badge badge-pill badge-secondary mt-2 addToCart" type="button"
+                    data-action="add-to-cart">Add to cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6 col-xs-6">
+              <div class="shadow-sm card mb-3 product text-center">
+                <img class="product-img mt-2" src="./img/gpu.jpg" alt="prd2" onmouseover="animateImg(this)"
+                onmouseout="normalImg(this)"/>
+                <div class="card-body">
+                  <h5 class="card-title text-info product-name">Gigabyte RTX3080</h5>
+                  <p class="card-text text-success product-price">1000 Tk.</p>
+                  <button class="btn badge badge-pill badge-secondary mt-2 addToCart" type="button"
+                  data-action="add-to-cart">Add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-6 col-xs-6">
+              <div class="shadow-sm card mb-3 product text-center">
+                <img class="product-img mt-2" src="./img/headphone.jpg" alt="prd3" onmouseover="animateImg(this)"
+                onmouseout="normalImg(this)"/>
+                <div class="card-body">
+                  <h5 class="card-title text-info product-name">Razer Kraken</h5>
+                  <p class="card-text text-success product-price">400 Tk.</p>
+                  <button class="btn badge badge-pill badge-secondary mt-2 addToCart" type="button" 
+                  data-action="add-to-cart">Add to cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6 col-xs-6">
+              <div class="shadow-sm card mb-3 product text-center">
+                <img class="product-img mt-2" src="./img/chair.jpg" alt="prd3" onmouseover="animateImg(this)"
+                onmouseout="normalImg(this)"/>
+                <div class="card-body">
+                  <h5 class="card-title text-info product-name">Scorpion Marvo</h5>
+                  <p class="card-text text-success product-price">800 Tk.</p>
+                  <button class="btn badge badge-pill badge-secondary mt-2 addToCart" type="button" 
+                  data-action="add-to-cart">Add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Items Codes End Here -->
+
+        </div>
+      </div>
+    </div>  
+    <!-- Container Codes End Here -->  
+    
+ </main>
+      <!-- Footer Menu  -->
+  <footer class="credit text-center pt-2 pb-2">Developed By: <span href="#">Neephat Benazir</span></footer>
+  
+  <!-- Javascript File -->
+  <script src="js/script.js"></script>
+  
+  </body>
+   
+</html>
